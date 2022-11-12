@@ -1,0 +1,48 @@
+.banner_login_cadastro {
+    height: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.form_login {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_login .form-outline {
+    width: 85%;
+}	
+
+.formulario_login_cadastro .form-outline {
+    width: 100%;
+}
+
+.aux {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: end;
+}
+
+.btn-registrar {
+    height: 15%;
+    width: 40%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_login_cadastro {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}

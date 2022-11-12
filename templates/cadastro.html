@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="core_login_cadastro">
+    <div class="formulario_login_cadastro">
+        <div class="banner_login_cadastro">
+            <h1>Cadastro</h1>
+        </div>
+        <p> {{ mensagem }} </p>
+        <form method="post" action="/cadastrar">
+            {{ form.csrf_token }}
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                  {{ form.nome(class='form-control') }}
+                  {{ form.nome.label(class='form-label') }}
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                  {{ form.sobrenome(class='form-control') }}
+                  {{ form.sobrenome.label(class='form-label') }}
+                </div>
+              </div>
+            </div>
+          
+            <div class="form-outline mb-4">
+              {{ form.email(class='form-control') }}
+              {{ form.email.label(class='form-label') }}
+            </div>
+          
+            <div class="form-outline mb-4">
+              {{ form.senha(class='form-control') }}
+              {{ form.senha.label(class='form-label') }}
+            </div>
+          
+            <div class="form-check d-flex justify-content-left mb-4">
+              {{ form.receber_emails(class='form-check-input') }}
+              {{ form.receber_emails.label(class='form-check-label') }}
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mb-4">Cadastrar</button>
+          </form>
+    </div>
+</div>
+{% endblock conteudo %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+    <div class="hello_banner">
+        <h3 class='h3'>Olá, {{ usuario.nome }}!</h3>
+        <form class='form-login-home' action="/{{ usuario.status }}">
+            <button type="submit" class="btn btn-{{ 'danger' if usuario.status == 'logout' else 'success'}}"> {{ usuario.status.title() }} </button>
+        </form>
+    </div>
+    <form class='search_form' method='post' action="/download">
+        {{ form.csrf_token }}
+        <div class="form-outline">
+            {{ form.pesquisa(class='form-control') }}
+            {{ form.pesquisa.label(class="form-label") }}
+        </div>
+
+        <div class="escolha_tipo">
+            <!--{{ form.baixar_video() }}-->
+        </div>
+
+        <button type="submit" class="btn btn-primary">Baixar</button>
+    </form>
+{% endblock conteudo %}

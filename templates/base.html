@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./plugins/mdb.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='./assets/icon.png') }}" type="image/x-icon">
+    <title>{{ titulo }}</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="core">
+            {% block conteudo %}
+            {% endblock conteudo %}
+        </div>
+    </main>
+    <footer class="home_footer">
+        <p class="footer_text">Powered by <strong>Megaman</strong>: &#129302;</p>
+    </footer>
+</body>
+    <script src="{{ url_for('static', filename='./plugins/mdb.min.js') }}"></script>
+</html>
