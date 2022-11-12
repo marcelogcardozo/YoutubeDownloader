@@ -1,6 +1,6 @@
 
 # YoutubeDownloader
-<div style='display:flex;flex-direction:row;justify-content:center;align-items:center'>
+<div align='center'>
     <img src="./static/assets/Screenshots%201%20-%202.png" style="width:450px">
     <img src="./static/assets/Screenshots%203%20-%204.png" style="width:450px">
 </div><br>
